@@ -33,3 +33,51 @@ let number = 55;
 let stringNumber = String(number); // here String object turn given value into string
 console.log(stringNumber);
 console.log(typeof stringNumber);
+
+// *********************** Operations ***********************
+
+
+let value = 3;
+let negValue = -(value);
+console.log(negValue);// herre value becames negative and displayed
+
+
+// basic Arithmetic Operations
+/*
+    2+2 
+    2-2
+    2*2
+    2**3 > to the power of given value
+    2/2
+    2%3 > reminder
+*/
+
+
+// adding to strings
+let wordOne = "hello";
+let wordTwo = " World";
+let wholeWord = wordOne+wordTwo;
+console.log(wholeWord); // here 2 string will be added to form hello world as result
+
+
+/*
+    tricky Operations
+    ("1"+2) == 12
+    (1+"2") == 12
+    ("1"+2+2) == 122
+    (1+2+"2") == 32 // here first two number will be treated as number and result will coverted into string will be added to last string
+
+    (3+4 * 5 % 3 ) make it had for readablity use Parenthese to make more pratical and readble
+
+    (+true) = 1 
+    (+"") = 0
+
+    let num1, num2, num3;
+    num1 = num2 = num3 = 2+2  >> it is Executable not permissable to use due to lack of readablity and causes Confusion
+
+
+*/
+
+let gameCounter = 100;
+++gameCounter; // here it better use postfix that prefix (gameCounter++)
+console.log(gameCounter);
