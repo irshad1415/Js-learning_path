@@ -5,6 +5,8 @@
 
 // Number: Represents numeric values, including integers and floating-point numbers.
 const score = 100;
+const isScore = 100.3;
+
 
 // Boolean: Represents a logical value of true or false.
 const isLoggedIn = false;
@@ -59,3 +61,41 @@ console.table({
         'Function': greet
     }
 });
+
+
+/****************stacks and heap memory****************** */
+
+// Stacks (Primitive) and Heap (Reference)
+
+// Stacks used for primitive data types
+
+// Stack (Primitive): 
+// Stacks are regions of memory used to store primitive data types.
+// Each variable has its own independent copy of the primitive value.
+// Modifying one variable does not affect the value of another.
+
+// Example with strings (primitive)
+let carOne = "918 spyder";  // carOne is assigned a primitive value (string)
+let carTwo = carOne;        // carTwo is assigned the same value as carOne
+carTwo = "laferarri";       // carTwo is assigned a new value
+
+// Heap used for reference data type
+// Heap (Reference):
+// The heap is a region of memory used for storing reference data types.
+// Reference data types store the memory address (reference) to the actual object.
+// When variables reference the same object in the heap, modifications are shared between them.
+
+// Example with objects (reference)
+let userOne = {
+    email: "userOne1@gmail.com",
+    name: "noname"
+};
+
+let userTwo = userOne;           // userTwo is assigned a reference to the same object as userOne
+userTwo.email = "userTwo@gmail.com";  // Modifying userTwo affects the shared object in the heap
+
+
+
+
+
+
