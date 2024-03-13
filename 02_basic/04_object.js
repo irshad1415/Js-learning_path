@@ -45,3 +45,45 @@ console.log(Object.values(advUser));  // Outputs an array containing the values 
 console.log(Object.entries(advUser));  // Outputs an array containing arrays of key-value pairs of advUser.
 
 console.log(advUser.hasOwnProperty("email"));  // Checks if advUser has a property named "email" and outputs true or false accordingly.
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+const mission = {
+    missionName: "falling star",
+    target: "starbeem",
+    hitPoint: "blade"
+};
+
+console.log(mission.hitPoint); // Expected result: "blade"
+
+// Destructuring assignment: Extracting the 'hitPoint' property from 'mission' object
+const { hitPoint: redpoint } = mission;
+// Explanation: The curly braces {} indicate object destructuring syntax. 
+// The property 'hitPoint' from 'mission' object is extracted and assigned to a variable named 'redpoint'.
+// 'redpoint' now holds the value of 'mission.hitPoint'.
+
+console.log(mission.hitPoint); // Expected result: "blade"
+console.log(redpoint); // Expected result: "blade"
+
+/*
+    {
+        "name":"blade",
+        "target": "startbeem",
+        "hitPoint": "star"
+    }
+*/ 
+
+// or
+
+/*
+    [
+    {},
+    {},
+    {}
+]
+
+*/
+//Explanation: JSON (JavaScript Object Notation) is a lightweight data-interchange format. 
+// It represents data as key/value pairs, similar to JavaScript objects. 
+// JSON is commonly used for exchanging data between a server and a web application.
